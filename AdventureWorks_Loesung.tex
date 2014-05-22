@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{listings}
+\input{lstset.tex}
+
+\begin{document}
+	\title{sqlzoo AdventureWorks Lösung}
+	\date{2014-05-22}
+	\author{Peter Brantsch}
+	\maketitle
+
+	\section{Easy questions}
+	\begin{enumerate}
+		\item Show the first name and the email address of customer with
+		CompanyName 'Bike World'.
+			\lstinputlisting{code/easy/1.sql}
+		\item Show the CompanyName for all customers with an address in City
+		'Dallas'.
+			\lstinputlisting{code/easy/2.sql}
+		\item How many items with ListPrice more than \$1000 have been sold?
+			\lstinputlisting{code/easy/3.sql}
+		\item Give the CompanyName of those customers with orders over
+		\$100000. Include the subtotal plus tax plus freight.
+			\lstinputlisting{code/easy/4.sql}
+		\item Find the number of left racing socks ('Racing Socks, L') ordered
+		by CompanyName 'Riding Cycles'.
+			\lstinputlisting{code/easy/5.sql}
+	\end{enumerate}
+
+	%\section{Medium questions}
+
+	%\section{Hard questions}
+
+\end{document}
