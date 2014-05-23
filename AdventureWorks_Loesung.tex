@@ -52,6 +52,36 @@
 			\lstinputlisting{code/medium/10.sql}
 	\end{enumerate}
 
-	%\section{Hard questions}
+	\section{Hard questions}
+	\begin{enumerate}
+		\addtocounter{enumi}{10}
+		\item For every customer with a 'Main Office' in Dallas show
+		AddressLine1 of the 'Main Office' and AddressLine1 of the 'Shipping'
+		address - if there is no shipping address leave it blank. Use one row
+		per customer.
+			\lstinputlisting{code/hard/11.sql}
+		\item For each order show the SalesOrderID and SubTotal calculated
+		three ways: \begin{enumerate}
+			\item From the SalesOrderHeader 
+			\item Sum of OrderQty$\cdot$UnitPrice
+			\item Sum of OrderQty$\cdot$ListPrice 
+			\end{enumerate}
+			\lstinputlisting{code/hard/12.sql}
+		\item Show the best selling item by value.
+			\lstinputlisting{code/hard/13.sql}
+		\item Show how many orders are in the following ranges (in \$):
+
+			\begin{tabular}{r@{ - }rrr}
+				\multicolumn{2}{r}{Range} & Num Orders & Total Value \\
+				0& 99 \\
+				100& 999\\
+				1000& 9999\\
+				10000&
+			\end{tabular}
+			\lstinputlisting{code/hard/14.sql}
+		\item Identify the three most important cities. Show the break down of
+		top level product category against city.
+			\lstinputlisting{code/hard/15.sql}
+	\end{enumerate}
 
 \end{document}
