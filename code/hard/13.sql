@@ -1,4 +1,4 @@
-select paw.ProductID as ProductID, sum(OrderQty*UnitPrice) as value
+select paw.ProductID as ProductID, sum(OrderQty*ListPrice) as value
 from ProductAW as paw
 join SalesOrderDetail as sod on (paw.ProductID = sod.ProductID)
 group by paw.ProductID
